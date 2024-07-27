@@ -7,7 +7,7 @@
 #                                               Copyright (c) 2024 Wataru KUNINO
 ################################################################################
 
-sht31 = 0x44                                         # M5Stack製は sht31 = 0x44
+sht31 = 0x44                                         # sht31 = 0x44 又は 0x45                                         
 
 import smbus
 from time import sleep                               # 時間取得を組み込む
@@ -31,11 +31,12 @@ while i2c:
         print(", WGBT = %.2f ℃" % wgbt)
     sleep(1)
 
-# 参考文献1
-# IchigoJam S+温湿度センサSi7021で暑さ指数WBGTを計算して、熱中症予防
-# https://bokunimo.net/blog/ichigo-jam/29/      2018年8月11日 Wataru KUNINO
-#
-# 参考文献2
-# 温湿度センサ SENSIRION SHT31 から温度と湿度を取得します。
-# https://github.com/bokunimowakaru/RaspberryPi/blob/master/gpio/raspi_sht31.py
-#                                               Copyright (c) 2021 Wataru KUNINO
+'''
+参考文献1
+  IchigoJam S+温湿度センサSi7021で暑さ指数WBGTを計算して、熱中症予防
+  https://bokunimo.net/blog/ichigo-jam/29/      2018年8月11日 Wataru KUNINO
+参考文献2
+  温湿度センサ SENSIRION SHT31 から温度と湿度を取得します。
+  https://github.com/bokunimowakaru/RaspberryPi/blob/master/gpio/raspi_sht31.py
+                                                Copyright (c) 2021 Wataru KUNINO
+'''
