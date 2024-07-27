@@ -26,7 +26,7 @@ while i2c:
     if len(data) >= 5:
         temp = float(word2uint(data[0],data[1])) / 65535. * 175. - 45.
         hum  = float(word2uint(data[3],data[4])) / 65535. * 100.
-        print("%.2f ℃, %.0f ％" % (temp,hum),end='')
+        print("Temp. = %.2f ℃, Humid. = %.0f ％" % (temp,hum),end='')
         wgbt = 0.725 * temp + 0.0368 * hum + 0.00364 * temp * hum - 3.246
         print(", WGBT = %.2f ℃" % wgbt)
     sleep(1)
