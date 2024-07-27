@@ -1,0 +1,28 @@
+1 ?”Humidity Sensor SILICON LABS Si7021
+2 'if ver()<12348 stop
+
+100 'MAIN
+110 let[0],#3ae6,#f3,#f5
+120 if i2cw(#40,#800,2) stop
+130 if i2cw(#40,#802,1) stop
+140 wait 2
+150 if i2cr( #40,#806,2) stop
+160 A=([3]>>8+[3]<<8)/37-474
+170 if i2cw(#40,#804,1) stop
+180 wait 2
+190 if i2cr (#40,#806,2) stop
+200 B=([3]>>9+[3]<<7)/26-65
+210 ?”Tempr=”;A/10;”.”;A%10 ;” “;
+220 ?”Humid=”;B/10;”.”;B%10;” “;
+230 if A<0 A=A-5 else A=A+5
+240 A=A/10:B=B+5: B=B/10
+300 'WBGT
+310 W=(A*725)/100
+320 if W<0 W=A*73
+330 W=W+(B*37)/100
+340 W=W+(A*B*4)/100-32
+350 ?”WBGT =”;W/10;”.”;W%10
+360 wait 300:goto 100
+' MIT LICENSE
+' https://bokunimo.net/blog/ichigo-jam/29/
+' by bokunimo.net
