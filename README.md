@@ -3,10 +3,14 @@ Pseudo WBGT Feeling Temperature Measurement
 
 ![Fig. Measurement Environment](https://bokunimo.net/blog/wp-content/uploads/2024/07/wbgt2.png)
 
-## Supported Devices
+## Supported Target MCU Devices
 
-- [Raspberry Pi](https://github.com/bokunimowakaru/wbgt/blob/master/raspi)
-- [IchigoJam](https://github.com/bokunimowakaru/wbgt/blob/master/ichigojam)
+- Raspberry Pi
+- IchigoJam
+
+## Supported Sensor Devices
+
+- Sensirion SHT31, SHT30 
 
 ## Calculate the heat index WBGT
 
@@ -27,13 +31,13 @@ WBGT = 0.725*Ta + 0.0368*RH + 0.00364*Ta*RH – 3.246
 
 - [Detail of Formula (Google Translation)](https://bokunimo-net.translate.goog/blog/ichigo-jam/29/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)  
 - [Detail of Formula In Japanese](https://bokunimo.net/blog/ichigo-jam/29/)  
-- [How to Make on Raspberry Pi (Google Translation)](https://bokunimo-net.translate.goog/blog/raspberry-pi/4721/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)  
-- [How to Make on Raspberry Pi in Japanese](https://bokunimo.net/blog/raspberry-pi/4721/)  
+- [How to Make it on Raspberry Pi (Google Translation)](https://bokunimo-net.translate.goog/blog/raspberry-pi/4721/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)  
+- [How to Make it on Raspberry Pi in Japanese](https://bokunimo.net/blog/raspberry-pi/4721/)  
 - [MIT LICENSE](https://github.com/bokunimowakaru/wbgt/blob/master/LICENSE)  
 
 ## Schematic for Connection
 
-An I2C interface of M5Stack ENV II or III Unit is connected to the GPIO header pins on a Raspberry Pi.  
+Connect an I2C interface of M5Stack ENV II or III Unit to the GPIO header pins on your Raspberry Pi.  
 
 ![Fig. Schematic](https://bokunimo.net/blog/wp-content/uploads/2024/07/schema.jpg)
 
@@ -46,6 +50,11 @@ You can get a WBGT value to substitute temperature for the variable TMPL and hum
 echo “0.725 * ${TMPL} + 0.0368 * ${HUMI} + 0.00364 * ${TMPL} * ${HUMI} – 3.246″|bc
 ```
 
+## Software on GitHub
+
+- [Raspberry Pi](https://github.com/bokunimowakaru/wbgt/blob/master/raspi)
+- [IchigoJam](https://github.com/bokunimowakaru/wbgt/blob/master/ichigojam)
+- 
 ----------------------------------------------------------------
 
 by Wataru KUNINO 
