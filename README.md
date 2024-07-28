@@ -1,6 +1,8 @@
 # wbgt
 Pseudo WBGT Feeling Temperature Measurement
 
+![Fig. Measurement Environment](https://bokunimo.net/blog/wp-content/uploads/2024/07/wbgt2.png)
+
 ## Supported Devices
 
 - [Raspberry Pi](https://github.com/bokunimowakaru/wbgt/blob/master/raspi)
