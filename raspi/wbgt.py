@@ -2,7 +2,7 @@
 # coding: utf-8
 
 ################################################################################
-# 温湿度センサ SENSIRION SHT31 から温度と湿度を取得します。
+# 温湿度センサ SENSIRION SHT31 から温度と湿度を取得し WBGT に換算します。
 #
 #                                               Copyright (c) 2024 Wataru KUNINO
 ################################################################################
@@ -27,8 +27,8 @@ while i2c:
         temp = float(word2uint(data[0],data[1])) / 65535. * 175. - 45.
         hum  = float(word2uint(data[3],data[4])) / 65535. * 100.
         print("Temp. = %.2f ℃, Humid. = %.0f ％" % (temp,hum),end='')
-        wgbt = 0.725 * temp + 0.0368 * hum + 0.00364 * temp * hum - 3.246
-        print(", WGBT = %.2f ℃" % wgbt)
+        wbgt = 0.725 * temp + 0.0368 * hum + 0.00364 * temp * hum - 3.246
+        print(", WBGT = %.2f ℃" % wbgt)
     sleep(1)
 
 '''
