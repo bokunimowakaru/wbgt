@@ -25,7 +25,9 @@ WBGT = 0.725*Ta + 0.0368*RH + 0.00364*Ta*RH – 3.246
 
 - [Detail of Formula (Google Translation)](https://bokunimo-net.translate.goog/blog/ichigo-jam/29/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)  
 - [Detail of Formula In Japanese](https://bokunimo.net/blog/ichigo-jam/29/)  
-- [MIT LICENSE](https://github.com/bokunimowakaru/wbgt/blob/master/LICENSE)
+- [How to Make on Raspberry Pi (Google Translation)](https://bokunimo-net.translate.goog/blog/raspberry-pi/4721/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)  
+- [How to Make on Raspberry Pi in Japanese](https://bokunimo.net/blog/raspberry-pi/4721/)  
+- [MIT LICENSE](https://github.com/bokunimowakaru/wbgt/blob/master/LICENSE)  
 
 ## The Simplest Code
 
