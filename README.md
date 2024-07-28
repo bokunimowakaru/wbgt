@@ -31,6 +31,12 @@ WBGT = 0.725*Ta + 0.0368*RH + 0.00364*Ta*RH – 3.246
 - [How to Make on Raspberry Pi in Japanese](https://bokunimo.net/blog/raspberry-pi/4721/)  
 - [MIT LICENSE](https://github.com/bokunimowakaru/wbgt/blob/master/LICENSE)  
 
+## Schematic for Connection
+
+An I2C interface of M5Stack ENV II or III Unit is connected to the GPIO header pins on a Raspberry Pi.  
+
+![Fig. Schematic](https://bokunimo.net/blog/wp-content/uploads/2024/07/schema.jpg)
+
 ## The Simplest Code
 
 Which is used the bc command. It's useful for calculations on a Linux-based OS such as Raspberry Pi.
