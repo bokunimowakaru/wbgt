@@ -1,10 +1,10 @@
-# wgbt
-Pseudo WGBT Feeling Temperature Measurement
+# wbgt
+Pseudo WBGT Feeling Temperature Measurement
 
 ## Supported Devices
 
-- [Raspberry Pi](https://github.com/bokunimowakaru/wgbt/blob/master/raspi)
-- [IchigoJam](https://github.com/bokunimowakaru/wgbt/blob/master/ichigojam)
+- [Raspberry Pi](https://github.com/bokunimowakaru/wbgt/blob/master/raspi)
+- [IchigoJam](https://github.com/bokunimowakaru/wbgt/blob/master/ichigojam)
 
 ## Calculate the heat index WBGT
 
@@ -17,7 +17,7 @@ So, I also used data from the other WBGT estimation formula derived from meteoro
 
 ### Method of Calculation
 
-The pseudo WGBT formula I created for indoor use is:
+The pseudo WBGT formula I created for indoor use is:
 
 ```
 WBGT = 0.725*Ta + 0.0368*RH + 0.00364*Ta*RH – 3.246
@@ -25,7 +25,7 @@ WBGT = 0.725*Ta + 0.0368*RH + 0.00364*Ta*RH – 3.246
 
 - [Detail of Formula (Google Translation)](https://bokunimo-net.translate.goog/blog/ichigo-jam/29/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=ja&_x_tr_pto=wapp)  
 - [Detail of Formula In Japanese](https://bokunimo.net/blog/ichigo-jam/29/)  
-- [MIT LICENSE](https://github.com/bokunimowakaru/wgbt/blob/master/LICENSE)
+- [MIT LICENSE](https://github.com/bokunimowakaru/wbgt/blob/master/LICENSE)
 
 ## The Simplest Code
 
