@@ -50,6 +50,14 @@ You can get a WBGT value to substitute temperature for the variable TMPL and hum
 echo "0.725 * ${TMPL} + 0.0368 * ${HUMI} + 0.00364 * ${TMPL} * ${HUMI} - 3.246"|bc
 ```
 
+Example:
+```bash
+pi@raspberrypi:~ $ TMPL=28
+pi@raspberrypi:~ $ HUMI=90
+pi@raspberrypi:~ $ echo "0.725 * ${TMPL} + 0.0368 * ${HUMI} + 0.00364 * ${TMPL} * ${HUMI} - 3.246"|bc
+29.53880
+```
+
 ## Software on GitHub
 
 - [Raspberry Pi](https://github.com/bokunimowakaru/wbgt/blob/master/raspi)
