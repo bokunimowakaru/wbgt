@@ -47,7 +47,7 @@ Which is used the bc command. It's useful for calculations on a Linux-based OS s
 You can get a WBGT value to substitute temperature for the variable TMPL and humidity for HUM, and execute the following command.
 
 ```bash
-echo “0.725 * ${TMPL} + 0.0368 * ${HUMI} + 0.00364 * ${TMPL} * ${HUMI} – 3.246″|bc
+echo "0.725 * ${TMPL} + 0.0368 * ${HUMI} + 0.00364 * ${TMPL} * ${HUMI} - 3.246"|bc
 ```
 
 ## Software on GitHub
