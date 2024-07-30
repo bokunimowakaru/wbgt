@@ -62,23 +62,18 @@ pi@raspberrypi:~ $ echo "0.725 * ${TMPL} + 0.0368 * ${HUMI} + 0.00364 * ${TMPL} 
 
 - [Raspberry Pi](https://github.com/bokunimowakaru/wbgt/blob/master/raspi)
 - [IchigoJam](https://github.com/bokunimowakaru/wbgt/blob/master/ichigojam)
-- 
-----------------------------------------------------------------
-
-by Wataru KUNINO 
-- Web Page [https://bokunimo.net/](https://bokunimo.net/)
-- Blog Page [https://bokunimo.net/blog/](https://bokunimo.net/blog/)
 
 ----------------------------------------------------------------
 
-## GitHub Pages  
+## URL of This Document
 
-*  (This Document)  
-  [https://git.bokunimo.com/wbgt/](https://git.bokunimo.com/wbgt/)  
+- [https://git.bokunimo.com/wbgt/](https://git.bokunimo.com/wbgt/)  
 
-----------------------------------------------------------------
 
-# git.bokunimo.com GitHub Pages site
-[http://git.bokunimo.com/](http://git.bokunimo.com/)  
+## Authored by Wataru KUNINO
+
+- Author's Web Page: [https://bokunimo.net/](https://bokunimo.net/)
+- Blog Page: [https://bokunimo.net/blog/](https://bokunimo.net/blog/)
+- GitHub Pages site: [http://git.bokunimo.com/](http://git.bokunimo.com/)
 
 ----------------------------------------------------------------
