@@ -49,7 +49,7 @@ from utime import sleep                         # μtimeからsleepを組み込�
 import network                                  # ネットワーク通信
 import usocket                                  # μソケット通信
 
-wifi = Pin(23, Pin.OUT)
+wifi = Pin(23, Pin.OUT)                         # 無線LANモジュールの電源ピン
 led = Pin("LED", Pin.OUT)                       # Pico W LED用ledを生成
 gnd = Pin(6, Pin.OUT)                           # GP6をSHT31のGNDピンに接続
 gnd.value(0)                                    # GND用に0Vを出力
