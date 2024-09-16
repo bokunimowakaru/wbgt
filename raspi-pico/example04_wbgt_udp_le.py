@@ -37,7 +37,7 @@ PASS = "password"                               # パスワード
 udp_to = '255.255.255.255'                      # UDPブロードキャスト
 udp_port = 1024                                 # UDPポート番号
 device_s = 'humid_3'                            # デバイス識別名
-interval = 30                                   # 送信間隔（秒）
+interval = 30                                   # ディープスリープ時間（秒）
 
 sht31 = 0x44                                    # 温湿度センサSHT31のI2Cアドレス
 wbgt_ver = 3                                    # WBGTバージョン 3 または 4
@@ -49,9 +49,7 @@ from utime import sleep                         # μtimeからsleepを組み込�
 import network                                  # ネットワーク通信
 import usocket                                  # μソケット通信
 
-sleep_duration = 30                             # スリープ時間（30秒）
 wifi = Pin(23, Pin.OUT)
-
 led = Pin("LED", Pin.OUT)                       # Pico W LED用ledを生成
 gnd = Pin(6, Pin.OUT)                           # GP6をSHT31のGNDピンに接続
 gnd.value(0)                                    # GND用に0Vを出力
