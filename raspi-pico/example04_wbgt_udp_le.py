@@ -1,6 +1,6 @@
 ###############################################################################
 # 温湿度センサ SENSIRION SHT31 から温度と湿度を取得し WBGT に換算します。
-# μIoT 温湿度計; Raspberry Pi Pico W + 温湿度センサ SHT31  [無線LAN対応版]
+# μIoT 温湿度計; Raspberry Pi Pico W + 温湿度センサ SHT31 [無線LAN][省電力版]
 # 温度と湿度を10秒おきにCSVxUDP方式で送信します
 # 説明：https://bokunimo.net/blog/raspberry-pi/4988/
 #
@@ -38,7 +38,7 @@ udp_to = '255.255.255.255'                      # UDPブロードキャスト
 udp_port = 1024                                 # UDPポート番号
 device_s = 'humid_3'                            # デバイス識別名
 interval = 30                                   # 送信間隔（秒）
-SSID = ""
+
 sht31 = 0x44                                    # 温湿度センサSHT31のI2Cアドレス
 wbgt_ver = 3                                    # WBGTバージョン 3 または 4
 wbgt_wide = True                                # 筆者の独自拡張Wide版
