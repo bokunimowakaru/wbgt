@@ -69,7 +69,7 @@ while i2c:
         print(", WBGT = %.2f ℃" % wbgt, end='')
         
         # 照度分をWGBTに加算する計算
-        Psun_w = 6e-3 * lux * math_pi * phantom_s
+        Psun_w = 6e-3 * lux * phantom_s
         delta = 0.8 * Psun_w * 1.5 * 3600 / 5 / (4184 * (0.37 + 0.63 * 0.55))
         wbgt_lum = wbgt + delta
         print(", WBGT_lum = %.2f ℃" % wbgt_lum)
